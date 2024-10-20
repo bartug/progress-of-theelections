@@ -1,0 +1,48 @@
+
+### **.gitignore:**
+
+```gitignore
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Firebase
+firebaseConfig.js
+
+# React Native
+# Build output
+android/app/build/
+ios/Pods/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Android
+/android/.gradle
+/android/app/build/
+
+# iOS
+ios/build/
+ios/Pods/
+
+# Misc
+*.lock
+*.env
+
+# Prevent bundling unnecessary files in production builds
+.expo-shared/

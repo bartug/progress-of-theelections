@@ -1,0 +1,434 @@
+[
+    {
+      "chapterId": 1,
+      "title": {
+        "en": "The Beginning",
+        "tr": "Başlangıç"
+      },
+      "storyText": {
+        "en": "Hello @username, we are embarking on a survival adventure with you. Your character will continue its life based on your choices. Will you conquer this deserted island, escape, or will your choices lead you to the island's demise? Let's begin if you're ready!",
+        "tr": "Merhaba @kullanıcıAdı, seninle beraber bir hayatta kalma macerasına başlıyoruz. Karakterin senin seçimlerinle hayatına devam edecek. Bu süreçte ıssız adayı fethedecek misin, adadan kurtulacak mısın yoksa seçimlerin seni adanın felaketine mi sürükleyecek? Hazırsan başlayalım!"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Let's begin!",
+            "tr": "Başlayalım!"
+          },
+          "nextChapterId": 2
+        }
+      ]
+    },
+    {
+      "chapterId": 2,
+      "title": {
+        "en": "The Plane Crash",
+        "tr": "Uçak Kazası"
+      },
+      "storyText": {
+        "en": "You boarded a plane, but it crashes into the water due to engine failure. You're the only survivor as the plane breaks apart right in front of you. You unbuckle quickly and swim to the surface. You see debris and the sinking plane around, but there seems to be a landmass to the north. We suggest you swim there, at least this once. Will you swim with your shoes on, or take them off?",
+        "tr": "Uçağa binmiş ve uçak motor arızasıyla suya düşüyor. Tek kurtulan sensin, çünkü uçak tam senin önünden ikiye ayrılmış. Hızlıca kemerini çözüp su üstüne çıktın. Etrafında enkaz ve gömülen uçağı görüyorsun, ama kuzeyde bir kara parçası var gibi görünüyor. Oraya doğru ilerlemeni ilk ve son kez öneriyoruz. Ayakkabılarınla mı yüzmeye karar vereceksin, yoksa çıkaracak mısın?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Swim with your clothes and shoes",
+            "tr": "Kıyafetlerin ve ayakkabılarınla yüz"
+          },
+          "nextChapterId": 3
+        },
+        {
+          "choiceText": {
+            "en": "Take off your shoes and swim",
+            "tr": "Ayakkabılarını çıkar ve yüz"
+          },
+          "nextChapterId": 4
+        }
+      ]
+    },
+    {
+      "chapterId": 3,
+      "title": {
+        "en": "Heavy Clothes, Slow Progress",
+        "tr": "Ağır Kıyafetler, Yavaş İlerleyiş"
+      },
+      "storyText": {
+        "en": "With your clothes and shoes weighing you down, you're exhausted as you finally reach the shore.",
+        "tr": "Kıyafetlerin ve ayakkabıların seni ağırlaştırıyor, kıyıya vardığında yorgunluktan bitmiş durumdasın."
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Continue exploring",
+            "tr": "Keşfe devam et"
+          },
+          "nextChapterId": 5
+        }
+      ]
+    },
+    {
+      "chapterId": 4,
+      "title": {
+        "en": "Barefoot but Quick",
+        "tr": "Yalınayak Ama Hızlı"
+      },
+      "storyText": {
+        "en": "You made it to shore without much weight holding you back, but while walking, something sharp pricks your foot...",
+        "tr": "Ayakkabıların seni yavaşlatmadı ve kıyıya vardın, ama dolanırken çıplak ayakla yürüdüğünden ayağına keskin bir şey battı..."
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Continue exploring",
+            "tr": "Keşfe devam et"
+          },
+          "nextChapterId": 6
+        }
+      ]
+    },
+    {
+      "chapterId": 5,
+      "title": {
+        "en": "Exploration Begins",
+        "tr": "Keşif Başlıyor"
+      },
+      "storyText": {
+        "en": "You begin exploring the surroundings. The first thing you need is water. Do you look for a stream or collect rainwater?",
+        "tr": "Etrafı keşfetmeye başlıyorsun. İlk ihtiyacın su. Bir akarsu mu arayacaksın yoksa yağmur suyu mu toplayacaksın?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Look for a stream",
+            "tr": "Bir akarsu ara"
+          },
+          "nextChapterId": 7
+        },
+        {
+          "choiceText": {
+            "en": "Collect rainwater",
+            "tr": "Yağmur suyu topla"
+          },
+          "nextChapterId": 8
+        }
+      ]
+    },
+    {
+      "chapterId": 6,
+      "title": {
+        "en": "Painful Journey",
+        "tr": "Acılı Yolculuk"
+      },
+      "storyText": {
+        "en": "With a wounded foot, every step becomes harder. You need to rest and treat the wound. Do you continue walking or look for a place to rest?",
+        "tr": "Yaralı ayağınla her adım daha zor hale geliyor. Dinlenmen ve yarayı tedavi etmen gerekiyor. Yürümeye devam mı edeceksin yoksa dinlenecek bir yer mi arayacaksın?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Keep walking",
+            "tr": "Yürümeye devam et"
+          },
+          "nextChapterId": 9
+        },
+        {
+          "choiceText": {
+            "en": "Find a place to rest",
+            "tr": "Dinlenecek bir yer ara"
+          },
+          "nextChapterId": 10
+        }
+      ]
+    },
+    {
+      "chapterId": 7,
+      "title": {
+        "en": "Found a Stream",
+        "tr": "Bir Akarsu Buldun"
+      },
+      "storyText": {
+        "en": "After a long search, you finally find a stream. It's clean enough to drink from. Do you rest and drink, or continue exploring the island?",
+        "tr": "Uzun bir arayışın ardından nihayet bir akarsu buldun. İçmek için yeterince temiz görünüyor. Dinlenip su içecek misin yoksa adayı keşfetmeye devam mı edeceksin?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Rest and drink",
+            "tr": "Dinlen ve su iç"
+          },
+          "nextChapterId": 11
+        },
+        {
+          "choiceText": {
+            "en": "Continue exploring",
+            "tr": "Keşfe devam et"
+          },
+          "nextChapterId": 12
+        }
+      ]
+    },
+    {
+      "chapterId": 8,
+      "title": {
+        "en": "Collecting Rainwater",
+        "tr": "Yağmur Suyu Toplama"
+      },
+      "storyText": {
+        "en": "You set up a small system to collect rainwater. After some time, the container fills with enough water to keep you hydrated. You need to decide whether to build a shelter or continue exploring.",
+        "tr": "Yağmur suyu toplamak için küçük bir düzenek kurdun. Bir süre sonra, kap yeterince suyla doldu. Şimdi sığınak yapmaya mı başlayacaksın yoksa keşfe devam mı edeceksin?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Build a shelter",
+            "tr": "Bir sığınak yap"
+          },
+          "nextChapterId": 13
+        },
+        {
+          "choiceText": {
+            "en": "Continue exploring",
+            "tr": "Keşfe devam et"
+          },
+          "nextChapterId": 12
+        }
+      ]
+    },
+    {
+      "chapterId": 9,
+      "title": {
+        "en": "Continuing with Pain",
+        "tr": "Acıyla Devam Etmek"
+      },
+      "storyText": {
+        "en": "You push through the pain but it becomes unbearable. You collapse, and darkness engulfs you.",
+        "tr": "Acıya dayanıyorsun ama acı dayanılmaz hale geliyor. Bayılıyorsun ve etrafın kararıyor."
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Continue",
+            "tr": "Devam et"
+          },
+          "nextChapterId": 14
+        }
+      ]
+    },
+    {
+      "chapterId": 10,
+      "title": {
+        "en": "Finding Shelter",
+        "tr": "Sığınak Bulmak"
+      },
+      "storyText": {
+        "en": "You find a small cave that seems safe enough to rest for the night. However, you hear strange sounds coming from deep inside the cave. Do you enter deeper to investigate or stay at the entrance and rest?",
+        "tr": "Gece dinlenmek için yeterince güvenli görünen küçük bir mağara buldun. Ancak, mağaranın derinlerinden garip sesler gelmeye başladı. Daha derinlere girip araştıracak mısın yoksa girişte kalıp dinlenecek misin?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Enter deeper into the cave",
+            "tr": "Mağaranın derinliklerine gir"
+          },
+          "nextChapterId": 15
+        },
+        {
+          "choiceText": {
+            "en": "Stay at the entrance and rest",
+            "tr": "Girişte kal ve dinlen"
+          },
+          "nextChapterId": 16
+        }
+      ]
+    },
+    {
+      "chapterId": 11,
+      "title": {
+        "en": "Refreshing Break",
+        "tr": "Serinletici Mola"
+      },
+      "storyText": {
+        "en": "You drink from the stream and feel refreshed. As you rest, you notice something shiny under the water. Do you reach for it or ignore it and keep resting?",
+        "tr": "Akarsudan içip serinliyorsun. Dinlenirken suyun altında parlayan bir şey fark ediyorsun. Ona uzanıp alacak mısın yoksa görmezden gelip dinlenmeye devam mı edeceksin?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Reach for the shiny object",
+            "tr": "Parlayan şeye uzan"
+          },
+          "nextChapterId": 17
+        },
+        {
+          "choiceText": {
+            "en": "Ignore it and rest",
+            "tr": "Görmezden gel ve dinlen"
+          },
+          "nextChapterId": 18
+        }
+      ]
+    },
+    {
+      "chapterId": 12,
+      "title": {
+        "en": "Mysterious Path",
+        "tr": "Gizemli Yol"
+      },
+      "storyText": {
+        "en": "You continue exploring the island. As you move forward, you come across a fork in the path. One side seems dark and ominous, the other bright and welcoming. Which path will you choose?",
+        "tr": "Adada keşfe devam ediyorsun. İlerlerken yol ikiye ayrılıyor. Bir taraf karanlık ve ürkütücü, diğer taraf ise aydınlık ve davetkâr görünüyor. Hangi yolu seçeceksin?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Take the dark path",
+            "tr": "Karanlık yolu seç"
+          },
+          "nextChapterId": 19
+        },
+        {
+          "choiceText": {
+            "en": "Take the bright path",
+            "tr": "Aydınlık yolu seç"
+          },
+          "nextChapterId": 20
+        }
+      ]
+    },
+    {
+      "chapterId": 13,
+      "title": {
+        "en": "Building Shelter",
+        "tr": "Sığınak İnşa Etmek"
+      },
+      "storyText": {
+        "en": "You gather some branches and leaves to build a temporary shelter. It offers some protection from the elements, but you know it won’t last long. Do you continue improving the shelter or explore the area further?",
+        "tr": "Biraz dal ve yaprak toplayıp geçici bir sığınak inşa ediyorsun. Hava şartlarına karşı bir miktar koruma sağlıyor, ancak uzun süre dayanmayacağını biliyorsun. Barınağı daha da güçlendirmeye mi devam edeceksin yoksa keşfe mi çıkacaksın?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Improve the shelter",
+            "tr": "Sığınağı geliştir"
+          },
+          "nextChapterId": 21
+        },
+        {
+          "choiceText": {
+            "en": "Explore the area",
+            "tr": "Keşfe çık"
+          },
+          "nextChapterId": 22
+        }
+      ]
+    },
+    {
+      "chapterId": 14,
+      "title": {
+        "en": "Darkness Falls",
+        "tr": "Karanlık Çöküyor"
+      },
+      "storyText": {
+        "en": "You wake up in complete darkness. It’s unclear how much time has passed, but you feel weak and disoriented. You need to find a way to regain your strength. Do you look for food or try to find water first?",
+        "tr": "Tamamen karanlıkta uyanıyorsun. Ne kadar zaman geçtiğini bilmiyorsun, ancak zayıf ve sersemlemiş hissediyorsun. Gücünü tekrar kazanmanın bir yolunu bulmalısın. Önce yiyecek mi arayacaksın yoksa su mu bulmaya çalışacaksın?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Look for food",
+            "tr": "Yiyecek ara"
+          },
+          "nextChapterId": 23
+        },
+        {
+          "choiceText": {
+            "en": "Look for water",
+            "tr": "Su ara"
+          },
+          "nextChapterId": 24
+        }
+      ]
+    },
+    {
+      "chapterId": 15,
+      "title": {
+        "en": "Deeper Into the Cave",
+        "tr": "Mağaranın Derinliklerine İlerlemek"
+      },
+      "storyText": {
+        "en": "You cautiously enter deeper into the cave. The air becomes colder and the strange noises grow louder. Suddenly, you see glowing eyes staring at you from the darkness. Do you run back or move closer?",
+        "tr": "Dikkatlice mağaranın derinliklerine ilerliyorsun. Hava soğuyor ve garip sesler daha da artıyor. Birden karanlıkta sana bakan parlayan gözler görüyorsun. Geri mi koşacaksın yoksa daha da yakınlaşacak mısın?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Run back",
+            "tr": "Geri koş"
+          },
+          "nextChapterId": 25
+        },
+        {
+          "choiceText": {
+            "en": "Move closer",
+            "tr": "Daha yakınlaş"
+          },
+          "nextChapterId": 26
+        }
+      ]
+    },
+    {
+      "chapterId": 16,
+      "title": {
+        "en": "Rest at the Cave Entrance",
+        "tr": "Mağara Girişinde Dinlenmek"
+      },
+      "storyText": {
+        "en": "You decide to stay at the entrance of the cave, but the noises continue, making it hard to sleep. Eventually, you doze off, but you wake up to find something has been near your shelter during the night. Footprints lead deeper into the forest. Do you follow them?",
+        "tr": "Mağaranın girişinde kalmaya karar veriyorsun, ancak sesler dinmediği için uyumakta zorlanıyorsun. Nihayet uyuya kalıyorsun, ama sabah kalktığında barınağının etrafında bir şeylerin dolaşmış olduğunu fark ediyorsun. Ayak izleri ormanın derinliklerine gidiyor. İzleri takip edecek misin?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Follow the footprints",
+            "tr": "Ayak izlerini takip et"
+          },
+          "nextChapterId": 27
+        },
+        {
+          "choiceText": {
+            "en": "Ignore the footprints and stay",
+            "tr": "İzleri görmezden gel ve kal"
+          },
+          "nextChapterId": 28
+        }
+      ]
+    },
+    {
+      "chapterId": 17,
+      "title": {
+        "en": "The Shiny Object",
+        "tr": "Parlayan Nesne"
+      },
+      "storyText": {
+        "en": "You reach for the shiny object and pull it out of the water. It's a strange metal box, sealed tightly. Do you try to open it now or keep it for later?",
+        "tr": "Parlayan nesneye uzanıp sudan çıkartıyorsun. Sıkıca kapalı garip bir metal kutu. Şimdi mi açacaksın yoksa sonra mı saklayacaksın?"
+      },
+      "choices": [
+        {
+          "choiceText": {
+            "en": "Open the box now",
+            "tr": "Kutuyu şimdi aç"
+          },
+          "nextChapterId": 29
+        },
+        {
+          "choiceText": {
+            "en": "Keep it for later",
+            "tr": "Sonra sakla"
+          },
+          "nextChapterId": 30
+        }
+      ]
+    }
+  ]
+
