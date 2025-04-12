@@ -3,42 +3,51 @@ import { View, Text, Image, Button, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../navigation/types';
-import { checkUser, updateUserData, checkChapter, checkLanguage,getUserData } from '../services/dataService';
+import { checkUser, updateUserData, checkChapter, checkLanguage, getUserData } from '../services/dataService';
+import auth from '@react-native-firebase/auth';
+import { Chapter, Choice } from '../types';
 
 type NavigationProps = StackNavigationProp<RootStackParamList>;
 
 const EpisodeScreen = () => {
-  const [currentChapter, setCurrentChapter] = useState<any>(null);
+  const [currentChapter, setCurrentChapter] = useState<Chapter | null>(null);
   const [lang, setLang] = useState<'en' | 'tr'>('tr');
   const navigation = useNavigation<NavigationProps>();
 
   useEffect(() => {
     const fetchUserData = async () => {
-      const userData = await getUserData();
-      setLang(checkLanguage(userData[0])); // Kullanıcının dilini ayarla
-      setCurrentChapter(checkChapter(userData[0])); // Mevcut bölümü ayarla
+      const currentUser = auth().currentUser;
+      if (currentUser) {
+        const userData = await getUserData(currentUser.uid);
+        if (userData) {
+          setLang(checkLanguage(userData));
+          const chapter = checkChapter(userData);
+          setCurrentChapter(chapter);
+        }
+      }
     };
     fetchUserData();
   }, []);
 
-  const handleChoicePress = async (choice: any) => {
-    const userData = await getUserData();
-
-    await updateUserData(userData[0].userId, choice.nextChapterId);
-    checkUser(navigation);
+  const handleChoicePress = async (choice: Choice) => {
+    const currentUser = auth().currentUser;
+    if (currentUser) {
+      await updateUserData(currentUser.uid, choice.nextChapterId);
+      checkUser(navigation);
+    }
   };
 
   return (
     <View style={styles.container}>
       <Image source={require(`../../public/images/episode.png`)} style={styles.backgroundImage} />
       <Text style={styles.title}>
-        {currentChapter ? currentChapter.title[lang] : "Bölüm bulunamadı!"}
+        {currentChapter ? currentChapter.title[lang] : 'Bölüm bulunamadı!'}
       </Text>
       <Text style={styles.storyText}>
-        {currentChapter ? currentChapter.storyText[lang] : ""}
+        {currentChapter ? currentChapter.storyText[lang] : ''}
       </Text>
 
-      {currentChapter?.choices.map((choice: any, index: number) => (
+      {currentChapter && currentChapter.choices.map((choice, index) => (
         <Button key={index} title={choice.choiceText[lang]} onPress={() => handleChoicePress(choice)} />
       ))}
     </View>

@@ -4,6 +4,7 @@ import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../navigation/types';
 import { checkUser } from '../services/dataService';
+import auth from '@react-native-firebase/auth';
 
 type NavigationProps = StackNavigationProp<RootStackParamList>;
 
@@ -13,7 +14,7 @@ const SplashScreen = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       checkUser(navigation);
-    }, 1000); 
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, [navigation]);
@@ -21,7 +22,7 @@ const SplashScreen = () => {
   return (
     <ImageBackground source={require('../../public/images/splashScreen.png')} style={styles.background} resizeMode="cover">
       <View style={styles.container}>
-        <Text style={styles.text}>Loading...</Text>
+        <Text style={styles.text}>Yükleniyor...</Text>
       </View>
     </ImageBackground>
   );
